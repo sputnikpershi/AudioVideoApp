@@ -12,7 +12,7 @@ import AVFoundation
 
 class AudioViewController: UIViewController {
     
-    var player: AVAudioPlayer!
+    var player: AVAudioPlayer?
     private var position = 0
     
     private lazy var songLabel: UILabel = {

@@ -64,7 +64,6 @@ extension VideoViewController: UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width
         let itemWidth = collectionView.bounds.width - 32
         let itemHeight = itemWidth * 0.56
         return CGSize(width: itemWidth, height: itemHeight)

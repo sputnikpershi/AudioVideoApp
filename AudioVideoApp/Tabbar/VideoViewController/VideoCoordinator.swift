@@ -18,6 +18,4 @@ class VideoCoordinator: Coordinator  {
     func start() {
         rootViewController.setViewControllers([videoVC], animated: false)
     }
-    
-    
 }

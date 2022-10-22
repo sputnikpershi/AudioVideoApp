@@ -21,8 +21,7 @@ class VideoViewController: UIViewController, UICollectionViewDataSource {
         layout.sectionInset =  UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
         return layout
     } ()
-    
-    
+
     
     private lazy var videoCollection: UICollectionView  = {
         let  collection = UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
@@ -55,11 +54,9 @@ extension VideoViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCollectionViewCell", for: indexPath) as! VideoCollectionViewCell
-        
         DispatchQueue.main.async {
             cell.setupCell(index: indexPath.row)
         }
-        
         return cell
     }
     
@@ -75,11 +72,8 @@ extension VideoViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = WatchVideoViewController()
-            vc.videoID = linkArray[indexPath.row]
-
-        
+        vc.videoID = linkArray[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
-
-        }
     }
+}
 

@@ -21,7 +21,6 @@ class MainCoordinator: Coordinator {
     
     func start() {
         
-        
         let audioCoordinator = AudioCoordinator()
         audioCoordinator.start()
         childCoordinators.append(audioCoordinator)
@@ -40,13 +39,8 @@ class MainCoordinator: Coordinator {
         childCoordinators.append(recordCoordinator)
         let recordVC = recordCoordinator.rootViewController
         recordVC.tabBarItem = UITabBarItem(title: "Record", image: UIImage(systemName: "record.circle"), selectedImage: UIImage(systemName: "record.circle.fill"))
-
-        
         
         self.rootViewController.viewControllers = [audioVC, videoVC, recordVC]
-        
-        
+    
     }
-    
-    
 }

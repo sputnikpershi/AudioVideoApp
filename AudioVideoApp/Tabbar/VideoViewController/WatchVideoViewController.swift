@@ -26,19 +26,12 @@ class WatchVideoViewController: UIViewController {
         setLayers()
         
         playerView.delegate = self
-            
-            if let id = self.videoID {
-                self.playerView.load(withVideoId: "\(id)", playerVars: ["playsinline": "1"])
-                self.playerView.playVideo()
+        
+        if let id = self.videoID {
+            self.playerView.load(withVideoId: "\(id)", playerVars: ["playsinline": "1"])
+            self.playerView.playVideo()
         }
-        
-        
     }
-    
-    
-    //This method should not be called on the main thread as it may lead to UI unresponsiveness.
-   // 2022-10-21 23:10:58.562590+0800 AudioVideoApp[57693:5122079] [Security] This method should not be called on the main thread as it may lead to UI unresponsiveness.
-
     
     
     private func setLayers() {
@@ -56,11 +49,8 @@ class WatchVideoViewController: UIViewController {
         playerView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-
+        
     }
     
 }
 
-extension WatchVideoViewController: YTPlayerViewDelegate {
-    
-}

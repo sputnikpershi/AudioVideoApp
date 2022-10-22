@@ -24,9 +24,7 @@ class WatchVideoViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .lightGray
         setLayers()
-        
-        playerView.delegate = self
-        
+                
         if let id = self.videoID {
             self.playerView.load(withVideoId: "\(id)", playerVars: ["playsinline": "1"])
             self.playerView.playVideo()
@@ -49,8 +47,6 @@ class WatchVideoViewController: UIViewController {
         playerView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        
     }
-    
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140857802903F16100B0ABA3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1408577F2903F16100B0ABA3 /* SnapKit */; };
+		140857832903F17300B0ABA3 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 140857822903F17300B0ABA3 /* YouTubeiOSPlayerHelper */; };
 		1436712928FFB8F500438AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436712828FFB8F500438AB6 /* AppDelegate.swift */; };
 		1436712B28FFB8F500438AB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436712A28FFB8F500438AB6 /* SceneDelegate.swift */; };
 		1436712D28FFB8F500438AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436712C28FFB8F500438AB6 /* ViewController.swift */; };
@@ -24,12 +26,10 @@
 		1487059028FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1487058D28FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 */; };
 		1487059128FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1487058E28FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 */; };
 		1487059228FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1487058F28FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 */; };
-		1487059528FFD15800244826 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1487059428FFD15800244826 /* SnapKit */; };
 		14870598290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14870596290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 */; };
 		14870599290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14870597290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 */; };
 		1487059B2901092600244826 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487059A2901092600244826 /* AudioModel.swift */; };
 		1487059D29023F1C00244826 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487059C29023F1C00244826 /* VideoModel.swift */; };
-		148705A2290243B200244826 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 148705A1290243B200244826 /* YouTubeiOSPlayerHelper */; };
 		148705A629026C9400244826 /* WatchVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148705A529026C9400244826 /* WatchVideoViewController.swift */; };
 		148705A8290278FF00244826 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148705A7290278FF00244826 /* VideoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -67,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1487059528FFD15800244826 /* SnapKit in Frameworks */,
-				148705A2290243B200244826 /* YouTubeiOSPlayerHelper in Frameworks */,
+				140857802903F16100B0ABA3 /* SnapKit in Frameworks */,
+				140857832903F17300B0ABA3 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +187,8 @@
 			);
 			name = AudioVideoApp;
 			packageProductDependencies = (
-				1487059428FFD15800244826 /* SnapKit */,
-				148705A1290243B200244826 /* YouTubeiOSPlayerHelper */,
+				1408577F2903F16100B0ABA3 /* SnapKit */,
+				140857822903F17300B0ABA3 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = AudioVideoApp;
 			productReference = 1436712528FFB8F500438AB6 /* AudioVideoApp.app */;
@@ -219,8 +219,8 @@
 			);
 			mainGroup = 1436711C28FFB8F500438AB6;
 			packageReferences = (
-				1487059328FFD15800244826 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				148705A0290243B200244826 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				1408577E2903F16100B0ABA3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				140857812903F17300B0ABA3 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = 1436712628FFB8F500438AB6 /* Products */;
 			projectDirPath = "";
@@ -478,7 +478,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1487059328FFD15800244826 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		1408577E2903F16100B0ABA3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -486,7 +486,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		148705A0290243B200244826 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+		140857812903F17300B0ABA3 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
 			requirement = {
@@ -497,14 +497,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1487059428FFD15800244826 /* SnapKit */ = {
+		1408577F2903F16100B0ABA3 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1487059328FFD15800244826 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 1408577E2903F16100B0ABA3 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		148705A1290243B200244826 /* YouTubeiOSPlayerHelper */ = {
+		140857822903F17300B0ABA3 /* YouTubeiOSPlayerHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 148705A0290243B200244826 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			package = 140857812903F17300B0ABA3 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
 			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */

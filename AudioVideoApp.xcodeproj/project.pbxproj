@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1436712928FFB8F500438AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436712828FFB8F500438AB6 /* AppDelegate.swift */; };
+		1436712B28FFB8F500438AB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436712A28FFB8F500438AB6 /* SceneDelegate.swift */; };
+		1436712D28FFB8F500438AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436712C28FFB8F500438AB6 /* ViewController.swift */; };
+		1436713228FFB8F600438AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1436713128FFB8F600438AB6 /* Assets.xcassets */; };
+		1436713528FFB8F600438AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1436713328FFB8F600438AB6 /* LaunchScreen.storyboard */; };
+		1436713D28FFB93300438AB6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436713C28FFB93300438AB6 /* Coordinator.swift */; };
+		1436713F28FFB9A000438AB6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436713E28FFB9A000438AB6 /* AppCoordinator.swift */; };
+		1436714128FFBBC600438AB6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436714028FFBBC600438AB6 /* MainCoordinator.swift */; };
+		1436714828FFBD1800438AB6 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436714728FFBD1800438AB6 /* RecordViewController.swift */; };
+		1436714A28FFBD2100438AB6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436714928FFBD2100438AB6 /* VideoViewController.swift */; };
+		1436714C28FFBD2A00438AB6 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436714B28FFBD2A00438AB6 /* AudioViewController.swift */; };
+		1436714E28FFC13900438AB6 /* RecordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436714D28FFC13900438AB6 /* RecordCoordinator.swift */; };
+		1436715028FFC15800438AB6 /* VideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436714F28FFC15800438AB6 /* VideoCoordinator.swift */; };
+		1436715228FFC18200438AB6 /* AudioCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436715128FFC18200438AB6 /* AudioCoordinator.swift */; };
+		1487059028FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1487058D28FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 */; };
+		1487059128FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1487058E28FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 */; };
+		1487059228FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1487058F28FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 */; };
+		1487059528FFD15800244826 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1487059428FFD15800244826 /* SnapKit */; };
+		14870598290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14870596290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 */; };
+		14870599290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14870597290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 */; };
+		1487059B2901092600244826 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487059A2901092600244826 /* AudioModel.swift */; };
+		1487059D29023F1C00244826 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487059C29023F1C00244826 /* VideoModel.swift */; };
+		148705A2290243B200244826 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 148705A1290243B200244826 /* YouTubeiOSPlayerHelper */; };
+		148705A629026C9400244826 /* WatchVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148705A529026C9400244826 /* WatchVideoViewController.swift */; };
+		148705A8290278FF00244826 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148705A7290278FF00244826 /* VideoCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1436712528FFB8F500438AB6 /* AudioVideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioVideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1436712828FFB8F500438AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1436712A28FFB8F500438AB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1436712C28FFB8F500438AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1436713128FFB8F600438AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1436713428FFB8F600438AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1436713628FFB8F600438AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1436713C28FFB93300438AB6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1436713E28FFB9A000438AB6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1436714028FFBBC600438AB6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1436714728FFBD1800438AB6 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		1436714928FFBD2100438AB6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		1436714B28FFBD2A00438AB6 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		1436714D28FFC13900438AB6 /* RecordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCoordinator.swift; sourceTree = "<group>"; };
+		1436714F28FFC15800438AB6 /* VideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCoordinator.swift; sourceTree = "<group>"; };
+		1436715128FFC18200438AB6 /* AudioCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCoordinator.swift; sourceTree = "<group>"; };
+		1487058D28FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Иванушки  International - Тополиный пух.mp3"; sourceTree = "<group>"; };
+		1487058E28FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Иванушки  International - Билетик в кино.mp3"; sourceTree = "<group>"; };
+		1487058F28FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Иванушки  International - Безнадега точка ру.mp3"; sourceTree = "<group>"; };
+		14870596290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Дискотека Авария - Заколебал ты.mp3"; sourceTree = "<group>"; };
+		14870597290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Дискотека Авария - Суровый рэп.mp3"; sourceTree = "<group>"; };
+		1487059A2901092600244826 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		1487059C29023F1C00244826 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		148705A529026C9400244826 /* WatchVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVideoViewController.swift; sourceTree = "<group>"; };
+		148705A7290278FF00244826 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1436712228FFB8F500438AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1487059528FFD15800244826 /* SnapKit in Frameworks */,
+				148705A2290243B200244826 /* YouTubeiOSPlayerHelper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1436711C28FFB8F500438AB6 = {
+			isa = PBXGroup;
+			children = (
+				1436712728FFB8F500438AB6 /* AudioVideoApp */,
+				1436712628FFB8F500438AB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1436712628FFB8F500438AB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1436712528FFB8F500438AB6 /* AudioVideoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1436712728FFB8F500438AB6 /* AudioVideoApp */ = {
+			isa = PBXGroup;
+			children = (
+				1436712828FFB8F500438AB6 /* AppDelegate.swift */,
+				1436712A28FFB8F500438AB6 /* SceneDelegate.swift */,
+				1436712C28FFB8F500438AB6 /* ViewController.swift */,
+				1436713E28FFB9A000438AB6 /* AppCoordinator.swift */,
+				1436714228FFBCA900438AB6 /* Tabbar */,
+				1436713128FFB8F600438AB6 /* Assets.xcassets */,
+				1436713328FFB8F600438AB6 /* LaunchScreen.storyboard */,
+				1436713628FFB8F600438AB6 /* Info.plist */,
+			);
+			path = AudioVideoApp;
+			sourceTree = "<group>";
+		};
+		1436714228FFBCA900438AB6 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1436714328FFBCBA00438AB6 /* Coordinators */,
+				1436714428FFBCC400438AB6 /* AudioViewController */,
+				1436714528FFBCD300438AB6 /* VideoViewController */,
+				1436714628FFBCDF00438AB6 /* RecordViewController */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1436714328FFBCBA00438AB6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1436713C28FFB93300438AB6 /* Coordinator.swift */,
+				1436714028FFBBC600438AB6 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1436714428FFBCC400438AB6 /* AudioViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1487058C28FFCEAC00244826 /* mp3 */,
+				1436715128FFC18200438AB6 /* AudioCoordinator.swift */,
+				1436714B28FFBD2A00438AB6 /* AudioViewController.swift */,
+				1487059A2901092600244826 /* AudioModel.swift */,
+			);
+			path = AudioViewController;
+			sourceTree = "<group>";
+		};
+		1436714528FFBCD300438AB6 /* VideoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1436714F28FFC15800438AB6 /* VideoCoordinator.swift */,
+				1436714928FFBD2100438AB6 /* VideoViewController.swift */,
+				148705A7290278FF00244826 /* VideoCollectionViewCell.swift */,
+				148705A529026C9400244826 /* WatchVideoViewController.swift */,
+				1487059C29023F1C00244826 /* VideoModel.swift */,
+			);
+			path = VideoViewController;
+			sourceTree = "<group>";
+		};
+		1436714628FFBCDF00438AB6 /* RecordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1436714D28FFC13900438AB6 /* RecordCoordinator.swift */,
+				1436714728FFBD1800438AB6 /* RecordViewController.swift */,
+			);
+			path = RecordViewController;
+			sourceTree = "<group>";
+		};
+		1487058C28FFCEAC00244826 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				1487058F28FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 */,
+				14870596290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 */,
+				14870597290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 */,
+				1487058E28FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 */,
+				1487058D28FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1436712428FFB8F500438AB6 /* AudioVideoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1436713928FFB8F600438AB6 /* Build configuration list for PBXNativeTarget "AudioVideoApp" */;
+			buildPhases = (
+				1436712128FFB8F500438AB6 /* Sources */,
+				1436712228FFB8F500438AB6 /* Frameworks */,
+				1436712328FFB8F500438AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioVideoApp;
+			packageProductDependencies = (
+				1487059428FFD15800244826 /* SnapKit */,
+				148705A1290243B200244826 /* YouTubeiOSPlayerHelper */,
+			);
+			productName = AudioVideoApp;
+			productReference = 1436712528FFB8F500438AB6 /* AudioVideoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1436711D28FFB8F500438AB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1436712428FFB8F500438AB6 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 1436712028FFB8F500438AB6 /* Build configuration list for PBXProject "AudioVideoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1436711C28FFB8F500438AB6;
+			packageReferences = (
+				1487059328FFD15800244826 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				148705A0290243B200244826 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
+			productRefGroup = 1436712628FFB8F500438AB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1436712428FFB8F500438AB6 /* AudioVideoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1436712328FFB8F500438AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14870599290107E300244826 /* Дискотека Авария - Суровый рэп.mp3 in Resources */,
+				1436713528FFB8F600438AB6 /* LaunchScreen.storyboard in Resources */,
+				1436713228FFB8F600438AB6 /* Assets.xcassets in Resources */,
+				1487059028FFCEDC00244826 /* Иванушки  International - Тополиный пух.mp3 in Resources */,
+				14870598290107E300244826 /* Дискотека Авария - Заколебал ты.mp3 in Resources */,
+				1487059128FFCEDC00244826 /* Иванушки  International - Билетик в кино.mp3 in Resources */,
+				1487059228FFCEDC00244826 /* Иванушки  International - Безнадега точка ру.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1436712128FFB8F500438AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1436713D28FFB93300438AB6 /* Coordinator.swift in Sources */,
+				1436714128FFBBC600438AB6 /* MainCoordinator.swift in Sources */,
+				1436714A28FFBD2100438AB6 /* VideoViewController.swift in Sources */,
+				1487059D29023F1C00244826 /* VideoModel.swift in Sources */,
+				1487059B2901092600244826 /* AudioModel.swift in Sources */,
+				1436712D28FFB8F500438AB6 /* ViewController.swift in Sources */,
+				148705A8290278FF00244826 /* VideoCollectionViewCell.swift in Sources */,
+				1436714828FFBD1800438AB6 /* RecordViewController.swift in Sources */,
+				1436714E28FFC13900438AB6 /* RecordCoordinator.swift in Sources */,
+				1436714C28FFBD2A00438AB6 /* AudioViewController.swift in Sources */,
+				1436713F28FFB9A000438AB6 /* AppCoordinator.swift in Sources */,
+				1436712928FFB8F500438AB6 /* AppDelegate.swift in Sources */,
+				1436715028FFC15800438AB6 /* VideoCoordinator.swift in Sources */,
+				1436712B28FFB8F500438AB6 /* SceneDelegate.swift in Sources */,
+				148705A629026C9400244826 /* WatchVideoViewController.swift in Sources */,
+				1436715228FFC18200438AB6 /* AudioCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1436713328FFB8F600438AB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1436713428FFB8F600438AB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1436713728FFB8F600438AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1436713828FFB8F600438AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1436713A28FFB8F600438AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YY78XVR2DH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioVideoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.Kiryl.Team.AudioVideoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1436713B28FFB8F600438AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YY78XVR2DH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioVideoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.Kiryl.Team.AudioVideoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1436712028FFB8F500438AB6 /* Build configuration list for PBXProject "AudioVideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1436713728FFB8F600438AB6 /* Debug */,
+				1436713828FFB8F600438AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1436713928FFB8F600438AB6 /* Build configuration list for PBXNativeTarget "AudioVideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1436713A28FFB8F600438AB6 /* Debug */,
+				1436713B28FFB8F600438AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1487059328FFD15800244826 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		148705A0290243B200244826 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1487059428FFD15800244826 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1487059328FFD15800244826 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		148705A1290243B200244826 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 148705A0290243B200244826 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1436711D28FFB8F500438AB6 /* Project object */;
+}

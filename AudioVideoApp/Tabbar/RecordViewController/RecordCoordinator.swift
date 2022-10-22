@@ -20,6 +20,4 @@ class RecordCoordinator: Coordinator {
     func start() {
         rootViewController.setViewControllers([recordVC], animated: false)
     }
-    
-    
 }

@@ -53,7 +53,7 @@ class RecordViewController: UIViewController {
         //settion of session
         recordingSession = AVAudioSession.sharedInstance()
         
-        if let number : Int = UserDefaults.standard.object(forKey: "myNum") as? Int {
+        if let number : Int = UserDefaults.standard.object(forKey: "muNum") as? Int {
             numOfRecords = number
         }
         
@@ -120,7 +120,7 @@ class RecordViewController: UIViewController {
             
             audioRecorder = nil
             
-            UserDefaults.standard.set(numOfRecords, forKey: "myNum")
+            UserDefaults.standard.set(numOfRecords, forKey: "muNum")
             tableRecords.reloadData()
             recordButton.setImage(UIImage(systemName: "record.circle"), for: .normal)
         }

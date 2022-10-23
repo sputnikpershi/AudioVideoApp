@@ -12,7 +12,7 @@ import AVFoundation
 
 class AudioViewController: UIViewController {
     
-    var player: AVAudioPlayer!
+    var player: AVAudioPlayer?
     private var position = 0
     
     private lazy var songLabel: UILabel = {
@@ -120,26 +120,21 @@ class AudioViewController: UIViewController {
         catch {
             print("something went wrong")
         }
-
-        
     }
     
-    
-    
-    
+ 
     @objc private func tapPlayButtonAction () {
         
         if let player = player, player.isPlaying {
             playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
             player.pause()
         } else {
-            //set up playes and play
             playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             songLabel.text = songs[position]
-//            playerConfigure()
             player?.play()
             }
         }
+    
     
     @objc private func tapStopButtonAction () {
         if let player = player, player.isPlaying {
@@ -159,8 +154,6 @@ class AudioViewController: UIViewController {
         songLabel.text = songs[position]
         player?.stop()
         playerConfigure()
-
-
     }
     
     
@@ -175,9 +168,5 @@ class AudioViewController: UIViewController {
         songLabel.text = songs[position]
         player?.stop()
         playerConfigure()
-
     }
-    
-    
-    
 }

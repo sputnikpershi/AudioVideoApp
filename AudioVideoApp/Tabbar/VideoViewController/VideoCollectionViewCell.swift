@@ -19,9 +19,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         addSubview(view)
-        
         view.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -36,6 +34,4 @@ class VideoCollectionViewCell: UICollectionViewCell {
         print(index)
         view.image = UIImage(named: "\(index)")
     }
-    
-    
 }
